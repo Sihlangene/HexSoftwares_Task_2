@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Market Trend TextView -->
+    <TextView
+        android:id="@+id/marketTrendTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Market is Bullish"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" /> <!-- Corrected marginTop -->
+
+    <!-- RecyclerView for Cryptocurrency List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="585dp" />
+
+    <Button
+        android:id="@+id/sortButton"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+        android:text="Sort Descending" />
+</LinearLayout>
+
+
